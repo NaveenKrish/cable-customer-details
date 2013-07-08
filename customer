@@ -1,0 +1,43 @@
+class CustomerDetails
+{
+String[] name;
+int[] customerid;
+String[] payment;
+
+CustomerDetails()
+{
+String[] name=new String[100];
+int[] customerid=new int[100];
+String[] payment=new String[100];
+int i,k=1;
+
+for(i=0;i<100;i++,k++)
+ {
+ name[i]=(args(i));
+ customerid[i]=k;
+ payment[i]=(args(i));
+ }
+}
+}
+
+class Customer extends CustomerDetails
+{
+public static void main(String args[])
+ {
+ int d,i;
+ CustomerDetails det=new CustomerDetails();
+ d=Integer.parseInt(args[0]);
+ System.out.println("Enter customer id" + d);
+ for(i=0;i<100;i++)
+ {
+  if(d==k[i])
+  {
+  System.out.println("Customer Name" + det.name[i] + "Payment" + det.payment[i]);
+  }
+  else
+  {
+  System.out.println("Customer not found");
+  }
+ }
+}
+}
